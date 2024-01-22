@@ -1,0 +1,10 @@
+/work/mnikvell/data/gbe_birds/SRR5423293_sorted_dedup.bam
+/work/mnikvell/data/gbe_birds/SRR5423294_sorted_dedup.bam
+/work/mnikvell/data/gbe_birds/SRR5423295_sorted_dedup.bam
+/work/mnikvell/data/gbe_birds/SRR5423296_sorted_dedup.bam
+/work/mnikvell/data/gbe_birds/SRR5423297_sorted_dedup.bam
+/work/mnikvell/data/gbe_birds/SRR5423298_sorted_dedup.bam
+/work/mnikvell/data/gbe_birds/SRR5423299_sorted_dedup.bam
+/work/mnikvell/data/gbe_birds/SRR5423300_sorted_dedup.bam
+/work/mnikvell/data/gbe_birds/SRR5423301_sorted_dedup.bam
+/work/mnikvell/data/gbe_birds/SRR5423302_sorted_dedup.bam

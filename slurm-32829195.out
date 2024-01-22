@@ -1,0 +1,38 @@
+Start data processing:
+15:38:47
+	-> angsd version: 0.940-dirty (htslib: 1.18) build(May 18 2023 16:53:32)
+	-> angsd -b bam_list_adults_pop_gen.txt -rf regions_for_relatedness_test.txt -gl 2 -domajorminor 1 -snp_pval 1e-6 -domaf 1 -minmaf 0.05 -doGlf 3 -P 20 -out angsdput_relatedness_32829195 
+	-> Inputtype is BAM/CRAM
+[multiReader] 10 samples in 10 input files
+	-> You have choosen to supply a very high number of threads. The number of threads will be capped at 8
+	-> SNP-filter using a pvalue: 1.000000e-06 correspond to 23.928127 likelihood units
+	-> Parsing 10 number of samples 
+	-> Region lookup 1/1
+	-> Printing at chr: NC_031781.1 pos:1024842 chunknumber 100 contains 253 sites
+	-> Printing at chr: NC_031781.1 pos:1049998 chunknumber 200 contains 2 sites
+
+	-> Done reading data waiting for calculations to finish
+	-> Done waiting for threads
+	-> Output filenames:
+		->"angsdput_relatedness_32829195.arg"
+		->"angsdput_relatedness_32829195.glf.gz"
+		->"angsdput_relatedness_32829195.glf.pos.gz"
+		->"angsdput_relatedness_32829195.mafs.gz"
+	-> Thu Jan 18 15:38:57 2024
+	-> Arguments and parameters for all analysis are located in .arg file
+	-> Total number of sites analyzed: 50249
+	-> Number of sites retained after filtering: 892 
+	[ALL done] cpu-time used =  3.66 sec
+	[ALL done] walltime used =  7.00 sec
+	-> Number of file names read:10
+	-> Seed is: 2027547021
+	-> Frequency file: 'freqs_32829195' contain 892 number of sites
+	-> nind:10 overall_number_of_sites:892
+	-> Done reading data from file: 0.00 0.00
+	-> Starting analysis now
+	-> length of joblist:45
+	[ALL done] cpu-time used =  0.23 sec (filereading took: 0.00 sec)
+	[ALL done] walltime used =  1.00 sec (filereading took: 0.00 sec)
+Finished data processing:
+15:39:03
+done

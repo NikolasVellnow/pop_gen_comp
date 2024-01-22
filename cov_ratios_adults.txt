@@ -1,0 +1,11 @@
+sample	cov_mt_NC_040875.1	cov_NC_031770.1	cov_NC_031799.1	ratio_Z_over_3
+/work/mnikvell/data/gbe_birds/SRR5423293_sorted_dedup.bam	118.651	51.2711	51.91	1.01246
+/work/mnikvell/data/gbe_birds/SRR5423294_sorted_dedup.bam	45.5321	58.7062	59.4925	1.01339
+/work/mnikvell/data/gbe_birds/SRR5423295_sorted_dedup.bam	58.939	51.4326	53.1247	1.0329
+/work/mnikvell/data/gbe_birds/SRR5423296_sorted_dedup.bam	70.6624	51.5598	52.3385	1.0151
+/work/mnikvell/data/gbe_birds/SRR5423297_sorted_dedup.bam	99.3581	64.7994	65.789	1.01527
+/work/mnikvell/data/gbe_birds/SRR5423298_sorted_dedup.bam	250.95	53.9116	55.0096	1.02036
+/work/mnikvell/data/gbe_birds/SRR5423299_sorted_dedup.bam	60.1091	51.2784	50.9541	0.993674
+/work/mnikvell/data/gbe_birds/SRR5423300_sorted_dedup.bam	103.051	58.9427	60.2318	1.02187
+/work/mnikvell/data/gbe_birds/SRR5423301_sorted_dedup.bam	54.7789	50.0693	51.1556	1.02169
+/work/mnikvell/data/gbe_birds/SRR5423302_sorted_dedup.bam	32.5896	48.5649	51.0312	1.05078

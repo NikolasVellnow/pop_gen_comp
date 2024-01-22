@@ -1,0 +1,17 @@
+Start data processing:
+11:54:54
+	-> angsd version: 0.940-dirty (htslib: 1.18) build(May 18 2023 16:53:32)
+	-> angsd -b bam_list_eggs_pop_gen.txt -rf small_chroms.txt -gl 2 -domajorminor 1 -snp_pval 1e-6 -domaf 1 -minmaf 0.05 -doGlf 3 -P 20 
+	-> No '-out' argument given, output files will be called 'angsdput'
+	-> Inputtype is BAM/CRAM
+[getFilenames]	-> Problems opening file: small_chroms.txt
+gzip: angsdput.mafs.gz: No such file or directory
+	-> Number of file names read:10
+	-> Seed is: 534204254
+
+
+something is wrong with freqs
+
+Finished data processing:
+11:54:56
+done

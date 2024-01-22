@@ -1,0 +1,21 @@
+	-> angsd version: 0.940-dirty (htslib: 1.18) build(May 18 2023 16:53:32)
+	-> angsd -b bam_list_eggs_pop_gen.txt -rf regions_sfs.txt -doSaf 1 -out eggs_saf_32901261 -anc /home/mnikvell/Desktop/work/data/genomes/refseq/vertebrate_other/GCF_001522545.3/GCF_001522545.3_Parus_major1.1_genomic.fna -GL 2 -minMapQ 30 -minQ 20 -P 20 
+	-> Mon Jan 22 10:41:23 2024
+----------------
+multiReader.cpp:
+	-nLines	50	(Number of lines to read)
+	-beagle	(null)	(Beagle Filename (can be .gz))
+	-bgen	(null)	(Bgen Filename)
+	-vcf-GL	(null)	(vcf Filename (can be bcf compressed or uncompressed))
+	-vcf-PL	(null)	(vcf Filename (can be bcf compressed or uncompressed))
+	-vcf-GP	(null)	(vcf Filename (can be bcf compressed or uncompressed))(*not used)
+	-glf	(null)	(glf Filename (can be .gz))
+	-pileup	(null)	(pileup Filename (can be .gz))
+	-intName 1	(Assume First column is chr_position)
+	-isSim	0	(Simulated data assumes ancestral is A)
+	-nInd	0		(Number of individuals)
+	-minQ	20	(minimum base quality; only used in pileupreader)
+	-fai	(null)	(fai file)
+	-minQ	20	(minimum base quality; only used in pileupreader)
+----------------
+multiReader.cpp:

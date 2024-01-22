@@ -1,0 +1,9 @@
+Start data processing:
+10:41:21
+	-> angsd version: 0.940-dirty (htslib: 1.18) build(May 18 2023 16:53:32)
+	-> angsd -b bam_list_adults_pop_gen.txt -rf regions_sfs.txt -doSaf 1 -out adults_saf_32901260 -anc /home/mnikvell/Desktop/work/data/genomes/refseq/vertebrate_other/GCF_001522545.3/GCF_001522545.3_Parus_major1.1_genomic.fna -GL 2 -minMapQ 30 -minQ 20 -P 20 
+	-> Inputtype is BAM/CRAM
+[getFilenames]	-> Problems opening file: regions_sfs.txt
+Finished data processing:
+10:41:22
+done
