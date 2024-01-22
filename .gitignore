@@ -1,2 +1,9 @@
 # slurm outputs
 slurm*out
+
+# output files
+freqs
+*.pdf
+*.xlsx
+*.saf.*
+*.args
