@@ -193,5 +193,6 @@ echo "done"
 
 ``````
 
-The outputs are a **.saf.gz** file, a **saf.pos.gz** file and a **saf.idx** file. These are binary files containing the allele frequency likelihoods, positions the blocks of data in the index file. 
+The outputs are a **.saf.gz** file, a **saf.pos.gz** file and a **saf.idx** file. These are binary files containing the allele frequency likelihoods, positions the blocks of data in the index file.
+ 
 
