@@ -6,4 +6,7 @@ freqs
 *.pdf
 *.xlsx
 *.saf.*
-*.args
+*.arg
+*.idx
+*.pos.gz
+*.sfs

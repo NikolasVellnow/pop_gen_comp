@@ -1,19 +1,19 @@
 #!/bin/bash -l
-#SBATCH --partition=long
+#SBATCH --partition=med
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=0-16:00:00
+#SBATCH --time=02:00:00
 #SBATCH --cpus-per-task=20
 #SBATCH --mem-per-cpu=3G
-#SBATCH --job-name=get_saf_likelihoods_with_angsd_job
+#SBATCH --job-name=get_sfs_with_angsd_job
 #SBATCH --mail-user=nikolas.vellnow@tu-dortmund.de
 #SBATCH --mail-type=All
 
 # type in path to text file with list of samples
 SAMPLE_LIST=$1
 
-# type in output file name
-OUT=$2
+# type in file name without ending
+NAME=$2
 
 # number of threads used in angsd
 NUM_THREADS=$3
@@ -28,16 +28,7 @@ echo $T0
 
 conda activate angsd
 
-angsd \
--b $SAMPLE_LIST \
--rf all_chroms_excl_Z_mt_LGE22.txt \
--doSaf 1 \
--out ${OUT}_${SLURM_JOBID} \
--anc $PATH_REF \
--GL 2 \
--minMapQ 30 \
--minQ 20 \
--P $NUM_THREADS
+realSFS "${NAME}".saf.idx -fold 1 -maxIter 100 -P $NUM_THREADS > "${NAME}".sfs
 
 
 conda deactivate
