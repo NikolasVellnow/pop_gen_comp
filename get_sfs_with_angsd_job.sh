@@ -12,15 +12,11 @@
 # type in path to text file with list of samples
 SAMPLE_LIST=$1
 
-# type in file name without ending
+# type in file name without ending (to provide saf files)
 NAME=$2
 
 # number of threads used in angsd
 NUM_THREADS=$3
-
-# path to reference genome
-PATH_REF=/home/mnikvell/Desktop/work/data/genomes/refseq/vertebrate_other/GCF_001522545.3/GCF_001522545.3_Parus_major1.1_genomic.fna
-
 
 T0=$(date +%T)
 echo "Start data processing:"
