@@ -9,3 +9,7 @@ freqs
 *.args
 *.txt
 *.ods
+*.arg
+*.idx
+*.pos.gz
+*.sfs
