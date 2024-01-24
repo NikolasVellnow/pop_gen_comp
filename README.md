@@ -138,7 +138,7 @@ echo "done"
 ```
 
 ## Site frequency spectrum
-For the following four analyses the site allele frequency likelihoods are needed. I generated them with angsd with the following script `get_saf_likelihoods_with_angsd_job.sh`:
+For the following four analyses the site allele frequency likelihoods are needed. I generated them with angsd using the following script `get_saf_likelihoods_with_angsd_job.sh`:
 
 ```sh
 #!/bin/bash -l
@@ -173,7 +173,7 @@ conda activate angsd
 
 angsd \
 -b $SAMPLE_LIST \
-#-rf regions_sfs.txt \
+-rf all_chroms_excl_Z_mt_LGE22.txt \
 -doSaf 1 \
 -out ${OUT}_${SLURM_JOBID} \
 -anc $PATH_REF \
@@ -193,6 +193,14 @@ echo "done"
 
 ``````
 
-The outputs are a **.saf.gz** file, a **saf.pos.gz** file and a **saf.idx** file. These are binary files containing the allele frequency likelihoods, positions the blocks of data in the index file.
- 
+The outputs are a **.saf.gz** file, a **saf.pos.gz** file and a **saf.idx** file. These are binary files containing the allele frequency likelihoods, the positions, and the blocks of data in the index file.
+
+### SFS histogram
+To obtain the maximum likelihood estimate of the SFS I used the realSFS command (uses EM algorithm) with the script `get_sfs_with_angsd_job.sh`:
+
+```sh
+
+```
+
+
 
