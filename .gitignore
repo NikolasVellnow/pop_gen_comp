@@ -13,3 +13,4 @@ freqs
 *.idx
 *.pos.gz
 *.sfs
+*.thetas.*
