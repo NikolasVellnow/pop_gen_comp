@@ -15,6 +15,7 @@ freqs
 *.args
 *.csv.gz
 *.txt.gz
+*.jar
 *.txt
 *.ods
 *.arg
