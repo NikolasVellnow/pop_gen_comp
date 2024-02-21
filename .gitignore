@@ -1,16 +1,25 @@
 # slurm outputs
 slurm*out
 
+# folders
+*/
+
 # output files
 freqs
 *.pdf
+*.jpeg
 *.xlsx
+*.pptx
+*.html
 *.saf.*
 *.args
+*.csv.gz
 *.txt
 *.ods
 *.arg
 *.idx
+*.pestPG
 *.pos.gz
+*.hwe.gz
 *.sfs
 *.thetas.*
