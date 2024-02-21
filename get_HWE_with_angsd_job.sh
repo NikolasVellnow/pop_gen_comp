@@ -5,7 +5,7 @@
 #SBATCH --time=0-07:58:00
 #SBATCH --cpus-per-task=20
 #SBATCH --mem-per-cpu=3G
-#SBATCH --job-name=get_saf_likelihoods_with_angsd_job
+#SBATCH --job-name=get_HWE_with_angsd_job
 #SBATCH --mail-user=nikolas.vellnow@tu-dortmund.de
 #SBATCH --mail-type=All
 
@@ -18,9 +18,6 @@ OUT=$2
 # number of threads used in angsd
 NUM_THREADS=$3
 
-# path to reference genome
-PATH_REF=/home/mnikvell/Desktop/work/data/genomes/refseq/vertebrate_other/GCF_001522545.3/GCF_001522545.3_Parus_major1.1_genomic.fna
-
 
 T0=$(date +%T)
 echo "Start data processing:"
@@ -30,13 +27,16 @@ conda activate angsd
 
 angsd \
 -b $SAMPLE_LIST \
--rf only_Z.txt \
--doSaf 1 \
--out ${OUT}_${SLURM_JOBID} \
--anc $PATH_REF \
--GL 2 \
+-rf all_chroms_excl_Z_mt_LGE22.txt \
+-doHWE 1 \
+-minHetFreq 0.0 \
+-doMajorMinor 1 \
+-GL 1 \
+-doMaf 1 \
 -minMapQ 30 \
 -minQ 20 \
+-SNP_pval 1e-6 \
+-out ${OUT}_${SLURM_JOBID} \
 -P $NUM_THREADS
 
 

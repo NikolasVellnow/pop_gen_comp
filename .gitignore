@@ -13,6 +13,10 @@ freqs
 *.html
 *.saf.*
 *.args
+*.mafs.gz
+*.glf.gz
+freqs_*
+coverage_*.txt_*
 *.csv.gz
 *.txt.gz
 *.jar
