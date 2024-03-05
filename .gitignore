@@ -17,6 +17,7 @@ freqs
 *.glf.gz
 freqs_*
 coverage_*.txt_*
+*.gz
 *.csv.gz
 *.txt.gz
 *.jar
