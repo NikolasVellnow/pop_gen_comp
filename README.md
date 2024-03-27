@@ -2,7 +2,7 @@
 This is a collection of scripts to perform a population genomics comparison between egg samples from Bielefeld, Germany, vs. adult blood samples from across Europe. A range of standard population genomics measures will be calculated and compared.
 
 ## Relatedness
-In order to calculate meaningful pop gen measures the individuals within our samples need not be related.
+In order to calculate meaningful pop gen measures the individuals within our samples need **not** be related.
 For this I used ngsRelate to caclulate pairwise measures of relatedness (Hedrick et al 2015) with the script `ngsrelate_job.sh`:
 ```sh
 #!/bin/bash -l

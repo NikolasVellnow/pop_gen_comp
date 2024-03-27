@@ -30,3 +30,5 @@ coverage_*.txt_*
 *.hwe.gz
 *.sfs
 *.thetas.*
+*.log
+*.qopt

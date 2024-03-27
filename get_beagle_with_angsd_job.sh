@@ -1,11 +1,11 @@
 #!/bin/bash -l
-#SBATCH --partition=long
+#SBATCH --partition=med
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=1-00:00:00
-#SBATCH --cpus-per-task=20
-#SBATCH --mem-per-cpu=3G
-#SBATCH --job-name=get_saf_likelihoods_with_angsd_job
+#SBATCH --time=0-07:58:00
+#SBATCH --cpus-per-task=8
+#SBATCH --mem-per-cpu=7G
+#SBATCH --job-name=get_beagle_with_angsd_job
 #SBATCH --mail-user=nikolas.vellnow@tu-dortmund.de
 #SBATCH --mail-type=All
 
@@ -30,15 +30,17 @@ conda activate angsd
 
 angsd \
 -b $SAMPLE_LIST \
--rf all_chroms_excl_Z_mt_LGE22.txt \
--doSaf 1 \
+-rf only_Z.txt \
+-doMajorMinor 1 \
+-doMaf 1 \
 -out ${OUT}_${SLURM_JOBID} \
 -anc $PATH_REF \
--GL 2 \
+-GL 1 \
+-doGlf 2 \
+-SNP_pval 1e-6 \
 -minMapQ 30 \
 -minQ 20 \
 -P $NUM_THREADS
-
 
 conda deactivate
 
