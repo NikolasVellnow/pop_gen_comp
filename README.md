@@ -294,7 +294,7 @@ echo "done"
 The script will generate .sfs files for each chromosome contained in the provided $CHROM_LIST files.
 
 
-### Thetas
+### Thetas ###
 Next I generated per site "thetas" with the `get_thetas_per_site_job.sh` script:
 
 ```sh
@@ -337,13 +337,54 @@ echo "done"
 
 ```
 
-TODO What files are being generated with the script???
-These per-site-Thetas can then be used to caclulate overall stats or to look at average stats in sliding windows.
+The output files .thetas.idx and .thetas.gz contain the per-site theta estimates in a binary format.
 
-#### Stats over whole genome
+These per-site thetas can then be used to calculate overall stats or to look at average stats in sliding windows.
+
+### Tajima's D ###
+
+Next I calculated diversity statistics and Tajima's D over what regions ????? with the script `get_Taj_D_job.sh`:
+
+```sh
+#!/bin/bash -l
+#SBATCH --partition=short
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=01:59:00
+#SBATCH --cpus-per-task=20
+#SBATCH --mem-per-cpu=3G
+#SBATCH --job-name=get_Taj_D_job
+#SBATCH --mail-user=nikolas.vellnow@tu-dortmund.de
+#SBATCH --mail-type=All
+
+# type in path to text file with list of samples
+SAMPLE_LIST=$1
+
+# type in file name without ending (to provide saf files)
+NAME=$2
+
+# number of threads used in angsd
+# NUM_THREADS=$3
+
+T0=$(date +%T)
+echo "Start data processing:"
+echo $T0
+
+conda activate angsd
+
+thetaStat do_stat "${NAME}".thetas.idx -outnames $NAME
 
 
-#### Stats in sliding windows
+conda deactivate
+
+T1=$(date +%T)
+echo "Finished data processing:"
+echo $T1
+
+echo "done"
+
+```
+
 
 
 

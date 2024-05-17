@@ -1,8 +1,8 @@
 #!/bin/bash -l
-#SBATCH --partition=med
+#SBATCH --partition=long
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=0-07:58:00
+#SBATCH --time=1-07:58:00
 #SBATCH --cpus-per-task=20
 #SBATCH --mem-per-cpu=3G
 #SBATCH --job-name=get_HWE_with_angsd_job
@@ -12,7 +12,7 @@
 # type in path to text file with list of samples
 SAMPLE_LIST=$1
 
-# type in output file name
+# type in output file name without ending
 OUT=$2
 
 # number of threads used in angsd

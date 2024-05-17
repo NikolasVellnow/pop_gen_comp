@@ -1,8 +1,8 @@
 #!/bin/bash -l
-#SBATCH --partition=short
+#SBATCH --partition=med
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=0-01:58:00
+#SBATCH --time=0-07:58:00
 #SBATCH --cpus-per-task=20
 #SBATCH --mem-per-cpu=3G
 #SBATCH --job-name=depth_per_site_all_chroms_job
