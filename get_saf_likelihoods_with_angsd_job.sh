@@ -2,9 +2,9 @@
 #SBATCH --partition=long
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=1-00:00:00
-#SBATCH --cpus-per-task=20
-#SBATCH --mem-per-cpu=3G
+#SBATCH --time=0-12:00:00
+#SBATCH --cpus-per-task=8
+#SBATCH --mem-per-cpu=8G
 #SBATCH --job-name=get_saf_likelihoods_with_angsd_job
 #SBATCH --mail-user=nikolas.vellnow@tu-dortmund.de
 #SBATCH --mail-type=All
