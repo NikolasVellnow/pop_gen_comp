@@ -2,9 +2,9 @@
 #SBATCH --partition=long
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=1-07:58:00
-#SBATCH --cpus-per-task=20
-#SBATCH --mem-per-cpu=3G
+#SBATCH --time=01-07:58:00
+#SBATCH --cpus-per-task=8
+#SBATCH --mem-per-cpu=8G
 #SBATCH --job-name=get_HWE_with_angsd_job
 #SBATCH --mail-user=nikolas.vellnow@tu-dortmund.de
 #SBATCH --mail-type=All
@@ -27,7 +27,7 @@ conda activate angsd
 
 angsd \
 -b $SAMPLE_LIST \
--rf all_chroms_excl_Z_mt_LGE22.txt \
+-rf control_regions_female_eggs_34738729_male_eggs_34738730_merged.txt \
 -doHWE 1 \
 -minHetFreq 0.0 \
 -doMajorMinor 1 \
