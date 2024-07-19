@@ -29,10 +29,10 @@ fst \
 stats2 \
 "${NAME1}"_"${NAME2}".fst.idx \
 -fold 1 \
--win 500000 \
--step 10000 \
+-win 1000 \
+-step 500 \
 -P $NUM_THREADS \
-> "${NAME1}"_"${NAME2}"_win_500kb_step_10kb.sliding_window
+> "${NAME1}"_"${NAME2}"_win_1kb_step_500b.sliding_window
 
 
 conda deactivate

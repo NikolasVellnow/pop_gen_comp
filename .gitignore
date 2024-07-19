@@ -34,3 +34,4 @@ coverage_*.txt_*
 *.thetas.*
 *.log
 *.qopt
+*.sliding_window
