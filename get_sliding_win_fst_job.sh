@@ -1,8 +1,8 @@
 #!/bin/bash -l
-#SBATCH --partition=med
+#SBATCH --partition=short
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=2:58:00
+#SBATCH --time=1:30:00
 #SBATCH --cpus-per-task=5
 #SBATCH --mem-per-cpu=3G
 #SBATCH --job-name=get_sliding_win_fst_job
@@ -29,10 +29,10 @@ fst \
 stats2 \
 "${NAME1}"_"${NAME2}".fst.idx \
 -fold 1 \
--win 1000 \
--step 500 \
+-win 500000 \
+-step 10000 \
 -P $NUM_THREADS \
-> "${NAME1}"_"${NAME2}"_win_1kb_step_500b.sliding_window
+> "${NAME1}"_"${NAME2}"_win_500kb_step_10kb.sliding_window
 
 
 conda deactivate

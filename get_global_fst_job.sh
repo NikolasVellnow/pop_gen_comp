@@ -1,8 +1,8 @@
 #!/bin/bash -l
-#SBATCH --partition=med
+#SBATCH --partition=short
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=2:30:00
+#SBATCH --time=1:30:00
 #SBATCH --cpus-per-task=5
 #SBATCH --mem-per-cpu=3G
 #SBATCH --job-name=get_global_fst_job

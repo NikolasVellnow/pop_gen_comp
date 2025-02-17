@@ -1,10 +1,10 @@
 #!/bin/bash -l
-#SBATCH --partition=long
+#SBATCH --partition=med
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=20:00:00
-#SBATCH --cpus-per-task=20
-#SBATCH --mem-per-cpu=3G
+#SBATCH --time=07:59:00
+#SBATCH --cpus-per-task=8
+#SBATCH --mem-per-cpu=8G
 #SBATCH --job-name=ngsrelate_job
 #SBATCH --mail-user=nikolas.vellnow@tu-dortmund.de
 #SBATCH --mail-type=All

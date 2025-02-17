@@ -30,6 +30,9 @@ coverage_*.txt_*
 *.pestPG
 *.pos.gz
 *.hwe.gz
+*.paf
+*.rdotplot
+*.fna
 *.sfs
 *.thetas.*
 *.log

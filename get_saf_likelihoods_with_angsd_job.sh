@@ -35,7 +35,7 @@ angsd \
 -out ${OUT}_${SLURM_JOBID} \
 -anc $PATH_REF \
 -GL 2 \
--minMapQ 30 \
+-minMapQ 55 \
 -minQ 20 \
 -P $NUM_THREADS
 

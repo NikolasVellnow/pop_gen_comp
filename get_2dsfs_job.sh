@@ -1,8 +1,8 @@
 #!/bin/bash -l
-#SBATCH --partition=long
+#SBATCH --partition=med
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=0-12:00:00
+#SBATCH --time=7:55:00
 #SBATCH --cpus-per-task=5
 #SBATCH --mem-per-cpu=24G
 #SBATCH --job-name=get_2dsfs_job
